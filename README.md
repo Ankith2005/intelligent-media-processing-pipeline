@@ -5,6 +5,11 @@
 The Intelligent Media Processing Pipeline is a backend application that accepts uploaded images and processes them asynchronously. The system performs multiple image analysis checks, including blur detection, brightness detection, OCR extraction, number plate validation, and duplicate image detection. Processing results are stored in a MySQL database and can be retrieved through REST APIs.
 
 ---
+# Live API
+
+[Intelligent Media Processing Pipeline](https://intelligent-media-processing-pipeline-fv08.onrender.com)
+
+---
 
 # Features
 
@@ -51,6 +56,20 @@ The Intelligent Media Processing Pipeline is a backend application that accepts 
 
 ```text
 intelligent-media-processing-pipeline/
+│
+├── screenshots/
+│   ├── image1/
+│   │   ├── post-upload.png
+│   │   ├── get-result-part1.png
+│   │   └── get-result-part2.png
+│   │
+│   ├── image2/
+│   │   ├── post-upload.png
+│   │   └── get-result.png
+│   │
+│   └── image3/
+│       ├── post-upload.png
+│       └── get-result.png
 │
 ├── src/
 │   ├── config/
@@ -290,6 +309,46 @@ image : Image File
 ```
 
 ---
+# Screenshots
+
+## Test Case 1
+
+### POST /api/upload
+
+![POST Upload](screenshots/image1/post-upload.png)
+
+### GET /api/results/:id (Part 1)
+
+![GET Result Part 1](screenshots/image1/get-result-part1.png)
+
+### GET /api/results/:id (Part 2)
+
+![GET Result Part 2](screenshots/image1/get-result-part2.png)
+
+---
+
+## Test Case 2
+
+### POST /api/upload
+
+![POST Upload](screenshots/image2/post-upload.png)
+
+### GET /api/results/:id
+
+![GET Result](screenshots/image2/get-result.png)
+
+---
+
+## Test Case 3
+
+### POST /api/upload
+
+![POST Upload](screenshots/image3/post-upload.png)
+
+### GET /api/results/:id
+
+![GET Result](screenshots/image3/get-result.png)
+---
 
 # AI Usage Disclosure
 
@@ -357,18 +416,6 @@ All AI-generated code was reviewed, tested, modified where necessary, and manual
 4. Start the server.
 5. Test the APIs using Postman.
 6. Use the Status API and Results API to view processing progress and analysis results.
-
----
-
-# Live API
-
-https://intelligent-media-processing-pipeline-fv08.onrender.com
-
----
-
-# GitHub Repository
-
-https://github.com/Ankith2005/intelligent-media-processing-pipeline
 
 ---
 
